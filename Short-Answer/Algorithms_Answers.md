@@ -7,7 +7,7 @@ a)  Being that a true or false decision is being mane of n and 'a' is not a cons
 b)
 
 
-c)
+c) recursive algorithm (calls on itself). if bunnies not 0, returns 2 + bunnies-1. one input and output at a time (with one step). therefore 0(1)
 
 ## Exercise II
 
