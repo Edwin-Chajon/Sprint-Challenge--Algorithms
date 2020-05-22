@@ -2,8 +2,7 @@
 
 ## Exercise I
 
-a)
-
+a)  Being that a true or false decision is being mane of n and 'a' is not a constant if n cubed is greater than 'a' (by replacing 'a' with a + n squared if 'a' is smaller), the size of n might impact the complexity of the runtime. therefore O(n).
 
 b)
 
