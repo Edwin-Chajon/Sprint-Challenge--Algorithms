@@ -7,7 +7,7 @@ a)  Being that a true or false decision is being mane of n and 'a' is not a cons
 b)  starting off i in range(n) makes the problem already dependant of the length of n: 0(n). from there the value of both j and sum can change depending on the range of n. therefore O(n2).
 
 
-c) Recursive algorithm (calls on itself). if bunnies not 0, returns 2 + bunnies-1. one input and output at a time (with one step). therefore 0(1). 
+c) Recursive algorithm (calls on itself). if bunnies not 0, returns 2 + bunnies-1. one input and output at a time (with one step). therefore 0(n). 
 
 ## Exercise II
 
