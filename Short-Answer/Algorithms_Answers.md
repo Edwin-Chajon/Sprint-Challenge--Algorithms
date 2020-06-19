@@ -2,10 +2,28 @@
 
 ## Exercise I
 
+    a = 0
+    while (a < n * n * n):
+      a = a + n * n
+
 a)  Being that a true or false decision is being mane of n and 'a' is not a constant if n cubed is greater than 'a' (by replacing 'a' with a + n squared if 'a' is smaller), the size of n might impact the complexity of the runtime. therefore O(n).
 
-b)  starting off i in range(n) makes the problem already dependant of the length of n: 0(n). from there the value of both j and sum can change depending on the range of n. therefore O(n2).
 
+    sum = 0
+    for i in range(n):
+      j = 1
+      while j < n:
+        j *= 2
+        sum += 1
+
+b)  starting off i in range(n) makes the problem already dependant of the length of n. from there the value of both j and sum can change depending on the range of n. therefore O(n log(n)).
+
+
+    def bunnyEars(bunnies):
+      if bunnies == 0:
+        return 0
+
+      return 2 + bunnyEars(bunnies-1)
 
 c) Recursive algorithm (calls on itself). if bunnies not 0, returns 2 + bunnies-1. one input and output at a time (with one step). therefore 0(n). 
 
