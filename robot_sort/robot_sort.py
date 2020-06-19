@@ -96,6 +96,7 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
+        '''
         self.set_light_on()
 
         while self.light_is_on():
@@ -109,7 +110,50 @@ class SortingRobot:
                 if self.compare_item() == -1:
                     self.swap_item()
             self.set_light_off()
-        
+
+
+It can move left or right.
+It can pick up an item
+If it tries to pick up an item while already holding one, it will swap the items instead.
+It can compare the item it's holding to the item in front of it.
+It can switch a light on its head on or off.
+        '''
+
+#initialize Robot
+        self.set_light_on()
+#while robot is on
+        while self.light_is_on():
+#due to this action running, turn light off
+            self.set_light_off()
+#if robot can move right
+            while self.can_move_right():
+#then move right
+                self.move_right()
+#robot compares and if item is bigger than what robot is currently holding
+                if self.compare_item() == 1:
+#swap the item
+                    self.swap_item()
+#and turn robot light on
+                    self.set_light_on()
+#if robot can move right
+            while self.can_move_left():
+#swap item
+                self.swap_item()
+#move to the left
+                self.move_left()
+#and compare if the item is of a leser value
+                if self.compare_item() == -1:
+#it swaps the item 
+                    self.swap_item()
+#and turns tthe light on
+                    self.set_light_on()
+#moves to the right 
+                self.move_right()
+#swaps item that is smaller
+                self.swap_item()
+#moves back to the left
+                self.move_left()
+
 
 if __name__ == "__main__":
     # Test our your implementation from the command line

@@ -12,4 +12,4 @@ c) Recursive algorithm (calls on itself). if bunnies not 0, returns 2 + bunnies-
 ## Exercise II
 
 
-identify the first floor f = n[0] and start droping one egg for every single floor incrementing from the beggining (egg == 1). once an egg breaks (if the egg is returned as 0), stop droping eggs and return the number of the floor in which egg broke. runtime is 0(n) depending on the size of the 'n' building due to the computation taking longer with buildings with many floors.
+identify the first floor f = n[0] and start droping one egg for every single floor incrementing from the beggining (egg == 1). once an egg breaks (if the egg is returned as 0), stop droping eggs and return the number of the floor in which egg broke. runtime is 0(log(n)) depending on the size of the 'n' building due to the computation taking longer with buildings with many floors.
